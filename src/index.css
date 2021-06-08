@@ -1,0 +1,97 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4e00;
+  background-image: linear-gradient(#ff4e00 0%, #ec9f05 74%);
+  overflow: hidden;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.calculator {
+  width: 500px;
+  background-color: beige;
+  padding: 20px;
+  border-radius: 20px 20px 20px 0px;
+}
+
+.functions-one {
+  width: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.functions-two {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.calc-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button {
+  margin: 3px;
+  width: 64px;
+  border: none;
+  height: 26px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.trigger-button {
+  background-color: #ff8008;
+}
+
+.number-button {
+  background-image: linear-gradient(
+    to right,
+    #e43a15 0%,
+    #e65245 51%,
+    #e43a15 100%
+  );
+}
+
+button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.basic-button {
+  background-color: lightseagreen;
+}
+
+.operation-button {
+  background-color: #6441a5;
+}
+
+input[type='text'] {
+  width: 324px;
+  height: 26px;
+  border-radius: 4px;
+  border: 0px;
+  background-color: #bccd95;
+  color: black;
+  padding: 0 5px 0 5px;
+  margin: 0 0px 10px 84px;
+  outline: none;
+}
