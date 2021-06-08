@@ -17,17 +17,21 @@ import getFactorial from '../utils/getFactorial';
 import getDegree from '../utils/getDegree';
 import getE from '../utils/getE';
 
+/** Calculator Component */
 const Calculator: React.FC = () => {
   const [result, setResult] = React.useState<string>('');
 
+  /** Handle on press Backspace */
   const handleBackspace = () => {
     setResult(result.slice(0, -1));
   };
 
+  /** Reset the display result */
   const handleReset = () => {
     setResult('');
   };
 
+  /** Handle the button clicks */
   const handleButtonClick = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
@@ -113,6 +117,7 @@ const Calculator: React.FC = () => {
     }
   };
 
+  /** Hanlde Change in input/result component */
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setResult(e.target.value);
   };

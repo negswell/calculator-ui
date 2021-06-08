@@ -1,12 +1,12 @@
 import React from 'react';
 
+/** IProps */
 interface IProps {
   onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
-const Keypad: React.FC<IProps> = (props) => {
-  const { onClick } = props;
-
+/** Keypad component */
+const Keypad: React.FC<IProps> = ({ onClick }) => {
   return (
     <div className='calc-buttons'>
       <div className='functions-one'>
