@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+#Approach
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple scientific calculator made using react, the usage of typescript was essential to keep the code base type safe and to help with the ease of development.
+The calculator keypad layout was rendered using flexbox to ensure it is 1D responsive, with the ability to wrap if needed. The calculator was divided into 3 main parts, the container which is the Calculator component, the result which shows the input as well as the result in the Result component , the keypad which shows the button layout,components are segregated according to functionality and component logic to make it easy to understand, develop and maintain if needed in the future. 
 
-## Available Scripts
+#Assumptions 
 
-In the project directory, you can run:
+It was assumed that native js is not allowed, hence the functionality to register keyboard presses on the window wasn't possible without attaching event listeners on the dom window, which could have been done on mount.
 
-### `npm start`
+Grid vs flexbox tardeoff, grid is a better option for wrapping the body but I did not feel it was that necessary in this task as there was only one calculator.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#Improvemnts 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Split the result / input screen into two, so the last operation is cached and shown on the upper half whereas the result is shown on the lower half.
 
-### `npm test`
+Write test cases to mock the API calls.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Add  functionality to register keyboard presses on the window for better UX.
 
-### `npm run build`
+Add a few more complex mathematical operations like integration,differentiation etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#Refernces 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Design was inspired by a few calculators that i saw online.
